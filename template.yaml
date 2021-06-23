@@ -68,7 +68,7 @@ spec:
           component_id: '{{ parameters.component_id }}'
           description: '{{ parameters.description }}'
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
-          tags: '{{ json parameters.tags }}'
+          _tags: '{{ json parameters.tags }}'
           owner: '{{ parameters.owner }}'
 
     - id: publish
