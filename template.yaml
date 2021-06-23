@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1beta2
 kind: Template
 metadata:
-  name: react-ssr-template
-  title: React SSR Template
-  description: Create a website powered with Next.js
+  name: cookiecutter-complex
+  title: Complex Values and Cookiecutter
+  description: Test template using cookiecutter values
   tags:
     - recommended
     - react
