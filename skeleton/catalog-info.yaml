@@ -3,6 +3,10 @@ kind: Component
 metadata:
   name: {{cookiecutter.component_id | jsonify}}
   description: {{cookiecutter.description | jsonify}}
+  tags: 
+  {% for tag in cookiecutter.tags %}
+    - {{ tag }}
+  {% endfor %}
   annotations:
     github.com/project-slug: {{cookiecutter.destination.owner + "/" + cookiecutter.destination.repo}}
     backstage.io/techdocs-ref: url:{{"https://" + cookiecutter.destination.host + "/" + cookiecutter.destination.owner + "/" + cookiecutter.destination.repo}}
