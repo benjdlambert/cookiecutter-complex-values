@@ -6,7 +6,7 @@ metadata:
   tags: 
   {% for tag in cookiecutter._tags %}
     - {{ tag }}
-  {% endfor}
+  {% endfor %}
   annotations:
     github.com/project-slug: {{cookiecutter.destination.owner + "/" + cookiecutter.destination.repo}}
     backstage.io/techdocs-ref: url:{{"https://" + cookiecutter.destination.host + "/" + cookiecutter.destination.owner + "/" + cookiecutter.destination.repo}}
